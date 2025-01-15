@@ -1,0 +1,191 @@
+          
+#navigationlist{
+						background-color:#aca9a8;
+						position: absolute;
+				  	width:80%;
+					 height:130px;
+					 margin-top:10px;
+					 margin: right 100px;;					 
+					 }
+					 
+.menu1{
+     padding:10px;
+     font-size:17px;
+     font-weight:bolder;
+     border:none;	
+     background-color: #bbbcc2;
+     color:#ffffff (163, 43, 43);
+     }
+     
+.dropdown-menu{
+     position:relative;
+     display:inline-block;
+     }
+     
+.menu-content{
+     display:none;
+     position:absolute;
+     background-color:#bbbcc2;
+     min-width:160px;
+     z-index:1;
+     }
+     
+.homee,.gh{
+     display: inline-block;
+     color:white;
+     padding: 12px 16px;
+     text-decoration: none;
+     font-size:17px;
+     font-weight:bold;
+     }
+     
+.gh{
+     display: block;
+     }
+     
+.homee{
+     display:inline-block;
+     }
+     
+.gh:hover,.homee:hover{
+     background-color:#bbbcc2;
+     }
+.dropdown-menu:hover .menu-content{
+     display:inline;
+     }
+.dropdown-menu:hover .menu1{
+     background-color:#5cb361;
+     }
+     /* ul */
+     .ul1{
+     				position:relative;
+     display:inline-block;
+     }
+#srilanka{
+				margin:10px;
+				color:white;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        right: 20px;
+				}	
+/* serchbox */
+.search input[type=text]{
+			width:200px;
+			height:30px;
+			border-radius:25px;
+			border: none;
+
+		}
+		
+		.search{
+			float:right;
+			margin-top:2px;
+			margin-right:20px;
+			position:absolute;
+    top:20px;
+    right:20px;
+			
+
+		}
+		
+		.search button{
+			background-color:black;
+			color:#f2f2f2;
+			width:24px;
+			height:30px;
+			float:right;
+			padding:2px 2px;
+			margin-right:8px;
+			font-size:12px;
+			border:none;
+			cursor:pointer;
+    top:20px;
+    right:15px;    
+		}
+		
+		/* dropdowm menu */
+		
+
+		
+		/* image */
+#homesri{
+				padding-top:100px;
+        }
+        
+.topleft{
+  position: absolute;
+  padding: 22px;
+  padding-top: 10px;
+  margin-top:20px;
+  top:50%;
+  left:50%;
+  text-align: center;
+  transform: translate(-50%,-50%);
+  font-size: 80px;
+  color:#e7e0e7;
+  
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-shadow:10px 5px 30px rgb(238, 63, 10);
+         }
+         
+.container{
+  position:relative;
+  text-align:left;
+  color: black;
+  font-weight:bold;
+  font-size:45px;
+  }
+
+/* gallery */
+.grid {
+  display: grid;
+  grid-template-rows:repeat(2,180px);
+  grid-template-columns:repeat(3, 1fr);
+  grid-gap: 5px;
+}
+
+/* style */
+
+.grid {
+  margin:20px auto;
+  max-width:75%;
+}
+
+.grid > .image {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* button */
+.imagebutton{
+  background-color: #000000;
+  float:right;
+  border:3px rgb(211, 100, 20);
+  color: white;
+  padding: 50px;
+  text-align: center;
+  text-decoration: underline overline;
+  display: inline-block;
+  font-size: 30px;
+  margin: 5px;
+  cursor: pointer;
+}
+/* gallery link */
+
+#hgi{
+				display:grid;
+				grid-template-columns:1fr 1fr 1fr;
+				}
+
+figure{
+				border :1px solid black ;
+				padding :4px;
+				margin:auto;
+				}
+
+ /*footer*/
+footer{
+  padding:22px;
+  margin-top:20px;
+  color:#742121;
+  text-align: center;
+}

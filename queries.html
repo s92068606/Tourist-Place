@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<head>
+				<title>Pearl Of The Indian Ocean</title>
+				<link rel="stylesheet" type="text/css" href="home.css">
+				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+				<script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js">
+				</script>
+				<style>
+								.left{
+								width:53%;
+								background:#b6159b;
+								float:left;
+								height:1700px;
+								top:190px;
+								z-index:0;
+								position:absolute;
+								padding:10px;
+								box-shadow: 3px 3px 5px 6px #ccc;
+								}
+								.right{
+
+								margin-left:60%;
+								background:#c44abd;
+								height:900px;
+								width:38%;
+								box-shadow: 3px 3px 5px 6px #ccc;
+								padding:10px ;
+								}
+								#app{
+												margin:10px;
+												padding:10px;
+								}
+								#submit{
+								margin:20px;
+								color:black;
+								padding:6px;
+								padding-left:14px;
+								padding-right:14px;
+								background-color:#7d55c9;
+								}
+								#reset{
+								margin-left:10px;
+								color:black ;
+								padding:6px;
+								padding-left:14px;
+								padding-right:14px;
+								background-color:#6ecf7b;
+								}
+								
+								.tags{
+												margin-top:10px ;
+								}
+							 .taglist{
+							 				margin:8px;
+							 }
+							 .spanmm{
+							 				margin:10px;
+							 				color:black;
+							 }
+				</style>
+				</head>
+				<body>
+				
+				<div id="navigationlist">
+								<h1 id="srilaka">SRI LANKA</h1> 
+								<div class="search">
+			<form action="#">
+				<input type="text" placeholder=" Search.." name="search">
+				<button>
+					<i class="fa fa-search" style="font-size: 18px;"></i>
+				</button>
+			</form>
+		</div>
+		<nav>
+						<a class="homee" href="home.html">HOME</a>
+						<div class="dropdown-menu">
+										<button class="menu1">DESTINATIONS</button>
+										<div class="menu-content">
+														
+														<a class="gh" href="destinations.html">CENTRAL PROVINCE</a>
+												  	<a class="gh" href="destinations.html">EASTERN PROVINCE</a>
+												  	<a class="gh" href="destinations.html">NORTH CENTRAL</a>
+												  	<a class="gh" href="destinations.html">NORTHERN PROVINCE</a>
+												  	<a class="gh" href="destinations.html">NORTH WESTERN PROVINCE</a>
+												  	<a class="gh" href="destinations.html">SABARGAMUWA PROVINCE</a>
+												  	<a class="gh" href="destinations.html">SOUTHERN PROVINCE</a>
+												  	<a class="gh" href="destinations.html">UVA </br>PROVINCE</a>
+														<a class="gh" href="destinations.html">WESTERN PROVINCE</a>
+										</div>
+							</div>
+						<a class="homee" href="things_to_do.html">THINGS TO DO</a>
+						<div class="dropdown-menu">
+										<button class="menu1">OTHER</button>
+										<div class="menu-content">
+														<a class="gh" href="aboutus.html">Contact Us</a>
+														<a class="gh" href="gallery.html">GALLERY</a>
+														<a class="gh" href="map.html">MAP</a>
+										</div>
+							</div>
+							<a class="homee" href="queries.html">QUERIES</a>
+			</nav>
+			</div>
+			   	</br></br></br></br></br></br></br></br></br>
+			   	<!-- vuejs htmls -->
+			   <div id="app" style="margin-top:150px;">
+			   				<div class="right">
+			   				<span class="spanmm">Welcome to SRI LANKAN TOURISM  <b>{{title}} </b><b>{{fname}}</b>.<br><br><br>
+			   				Enter Your details here. <br><br><br>
+			   				Last Name : {{lname}}<br><br>
+			   				Age : {{age}} <br><br>
+			   				Gender : {{gender}}<br><br>
+			   				Country : {{country}} <br><br>
+			   				Email : {{email}}<br><br>
+			   				Telephone : {{telephone}} <br><br>
+			   				place One : {{label1}} <br>
+			   				place Two : {{label2}} <br>
+			   				place Three : {{label3}} <br>
+			   				place Four : {{label4}}<br>
+			   				place Five : {{label5}}<br>
+			   				<br><br>
+			   				Your Inquiry : {{paragraph}} </span>
+			   				</div>
+			   				<div class="left">
+			   								<h3>Enter Your Details...</h3><br>
+			   				<span>Select A Title 
+ </span></br>
+			   				<select v-model="title" class="tags" required>
+  <option disabled value="">Title</option>
+  <option>Mr</option>
+  <option>Mrs</option>
+  <option>Miss</option>
+</select> 
+<form action="submitted.html" id="formmain">
+            <p>
+   				<label for="fname" class="label1">First Name  
+</label><br>
+   				<input type="text" v-model="fname" class="tags" required>
+   </p>
+   <p>
+   				<label for="lname" class="label1">Last Name 
+ </label></br>
+   				<input type="text" v-model="lname" class="tags">
+   </p>
+           <span>Please select your age 
+ </span></br>
+            <select v-model="age" class="tags">
+            				<option disabled value="">Age </option>
+            				<option>13</option>
+            				<option>14</option>
+            				<option>15</option>
+            				<option>16</option>
+            				<option>17</option>
+            				<option>18</option>
+            				<option>19</option>
+            				<option>20</option>
+            				<option>21</option>
+            				<option>22</option>
+            				<option>23</option>
+            				<option>24</option>
+            				<option>25</option>
+            				<option>26</option>
+            				<option>27</option>
+            				<option>28</option>
+            				<option>29</option>
+            				<option>30</option>
+            				<option>31</option>
+            				<option>32</option>
+            				<option>33</option>
+            				<option>34</option>
+            				<option>35</option>
+            				<option>36</option>
+            				<option>37</option>
+            				<option>38</option>
+            				<option>39</option>
+            				<option>40</option>
+            				<option>41</option>
+            				<option>42</option>
+            				<option>43</option>
+            				<option>44</option>
+            				<option>45</option>
+            				<option>46</option>
+            				<option>47</option>
+            				<option>48</option>
+            				<option>49</option>
+            				<option>50</option>
+            				<option>51</option>
+            				<option>52</option>
+            				<option>53</option>
+            				<option>54</option>
+            				<option>55</option>
+            				<option>56</option>
+            				<option>57</option>
+            				<option>58</option>
+            				<option>59</option>
+            				<option>60</option>
+            				<option>61</option>
+            				<option>62</option>
+            				<option>63</option>
+            				<option>64</option>
+            				<option>65</option>
+            				<option>66</option>
+            				<option>67</option>
+            				<option>68</option>
+            				<option>69</option>
+            				<option>70</option>
+            				<option>71</option>
+            				<option>72</option>
+            				<option>73</option>
+            				<option>74</option>
+            				<option>75</option>
+            				<option>76</option>
+            				<option>77</option>
+            				<option>78</option>
+            </select>
+            </br>
+            </br>
+            <span>Gender 
+</span></br>
+            <input type="radio" id="one" value="male" v-model="gender">
+            <label for="male" class="tags">Male</label>
+            <input type="radio" id="two" value="female" v-model="gender">
+            <label for="female" class="tags">Female</label>
+			   				<p>
+   				<label for="country" class="label1">Your Country 
+ </label></br>
+   				<input type="text" v-model="country" class="tags" required>
+   </p>
+			   				<p>
+   				<label for="email" class="label1">Email address 
+  </label></br>
+   				<input type="email" placeholder="email@example.com" v-model="email" class="tags">
+   </p>
+   <p>
+   				<label for="telephone" class="label1">Telephone 
+ </label></br>
+   				<input type="tel" v-model="telephone" class="tags" placeholder="+94-11-*******" required>
+   </p></br>
+   <span>Things to do 
+ </span>
+   <ul>
+   				<li>
+   								<textarea class="taglist" rows="2" cols="45" placeholder="Activity One" v-model="label1"></textarea>
+   				</li>
+   				<li>
+   								<textarea class="taglist" rows="2" cols="45" placeholder="Activity Two" v-model="label2"></textarea>
+   				</li>
+   				<li>
+   								<textarea class="taglist" rows="2" cols="45" placeholder="Activity Three" v-model="label3"></textarea>
+   				</li>
+   				<li>
+   								<textarea class="taglist" rows="2" cols="45" placeholder="Activity Four" v-model="label4"></textarea>
+   				</li>
+   				<li>
+   								<textarea class="taglist" rows="2" cols="45" placeholder="Activity Five" v-model="label5"></textarea>
+   				</li>
+   				
+   </ul>
+   <span>Please Enter Your Inquiry Here 
+ </span><br>
+   				<textarea id="mainfor" rows="5" cols="50" v-model="paragraph" class="tags" placeholder="Enter your inquiry..."></textarea><br>
+  <p> <label for="submit" class="label1"></label>
+   				<input type="submit" id="submit"/>
+   				
+   				<label for="reset" class="label1"></label>
+   				<input type="reset" id="reset"></p><br>
+   </form>
+			   </div>
+			   </div>
+			   
+	<footer style="margin-top: 1000px;">
+      <p>M.F.F.A.SHIF&copy; 2022</p>
+    </footer>
+		<script>
+						var app = new Vue({
+										el :"#app",
+										data:{
+														picked:"",
+									      	title:"",
+									      	fname:"",
+									      	lname:"",
+									      	age:"",
+									      	gender:"",
+									      	country:"",
+									      	email:"",
+									      	telephone:"",
+									      	paragraph:"",
+									      	label1:"",
+									      	label2:"",
+									      	label3:"",
+									      	label4:"",
+									      	label5:"",
+									      	},
+						});
+		</script>
+
+				</body>
+</html>
